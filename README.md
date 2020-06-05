@@ -7,3 +7,16 @@ Install Inspec
 apt-get -y install ruby ruby-dev gcc g++ make
 gem install inspec-bin
 ```
+
+### Create Instance
+```
+cd terraform/environments/dev
+terraform init
+terraform plan
+terraform apply --auto-approve
+mkdir -p ~/iac-integration-tests/test/profiles/aws/files
+terraform output --json > ~/iac-integration-tests/test/profiles/aws/files/tfoutput.json
+```
+### Run Integration Tests
+cd ~/iac-integration-tests
+inspec exec test/profiles/aws -t aws://us-east-2/default
