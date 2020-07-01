@@ -7,7 +7,10 @@ Install Inspec
 apt-get -y install ruby ruby-dev gcc g++ make
 gem install inspec-bin
 ```
-
+### Create Inspec Profile
+```
+inspec init profile tests/profiles/aws
+```
 ### Create Instance
 ```
 cd terraform/environments/dev
