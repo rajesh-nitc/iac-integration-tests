@@ -17,8 +17,8 @@ cd terraform/environments/dev
 terraform init
 terraform plan
 terraform apply --auto-approve
-mkdir -p ~/iac-integration-tests/test/profiles/aws/files
-terraform output --json > ~/iac-integration-tests/test/profiles/aws/files/tfoutput.json
+mkdir -p ~/iac-integration-tests/tests/profiles/aws/files
+terraform output --json > ~/iac-integration-tests/tests/profiles/aws/files/tfoutput.json
 ```
 ### Run Integration Tests
 ```
