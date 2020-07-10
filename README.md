@@ -1,6 +1,4 @@
 # Iac
-> If you’re using this demo, please :star: this repository to show your interest!
-
 Iac Integration Tests with Inspec
 ## Getting Started
 ### Prerequistes
